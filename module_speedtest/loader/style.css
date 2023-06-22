@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    display: grid;
+    place-items: center;
+    padding: 100px;
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation: rotate 1.7s infinite;
+}
+
+.div {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.div1 {
+    background-color: #19A68C;
+    left: 0;
+    top: 0;
+}
+
+.div2 {
+    background-color: #F63D3A;
+    right: 0;
+    top: 0;
+}
+
+.div3 {
+    background-color: #FDA543;
+    left: 0;
+    bottom: 0;
+}
+
+.div4 {
+    background-color: #193B48;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes rotate{
+    from{rotate: 0;}
+    to{rotate: 360deg;}
+}

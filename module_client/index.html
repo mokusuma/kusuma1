@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="virus.svg">
+</head>
+<body>
+
+    <div id="game">
+        <div class="modal-filter">
+            
+        </div>
+        <div class="object1"></div>
+        <div class="object2"></div>
+        <div class="info">
+            <p class="game-name">Virus Slayer!</p>
+            <output class="name-output">name</output>  
+            <div class="info-div">
+                <div class="score value-container">
+                    <p class="value" >Score: </p>
+                    <output id="score" class="value-output">0</output>
+                </div>
+                <div class="fail value-container">
+                    <p class="value" >Fails:</p>
+                    <output id="fail" class="value-output">0</output>
+                </div>
+            </div>
+        </div>  
+        <canvas width="400px" height="600px" ></canvas>
+        <div class="danger">
+            <div id="light-1" class="light"></div>
+            <div id="light-2" class="light"></div>
+            <div id="light-3" class="light"></div>
+            <div id="light-4" class="light"></div>
+        </div>
+        <div class="canvas-buttons">
+            <button id="D" class=" c-button Violet-key">D</button>
+            <button id="F" class=" c-button Blue-key">F</button>
+            <button id="J" class=" c-button Violet-key">J</button>
+            <button id="K" class=" c-button Blue-key">K</button>
+        </div>
+        <div class="object3"></div>
+        <div class="object4"></div>
+        <p class="timer">00:00</p>
+    </div>
+    
+    <dialog id="alert">
+    <p>You must insert your name!</p>
+    </dialog>
+
+    <dialog class="front">
+        <h1>Virus Slayer!</h1>
+        <img class="virus" src="virus.svg" alt="" width="100px">
+        <div class="front-div">
+            <p class="instruction">Instruction!</p>
+            <ol>
+                <li>Make a cool name</li>
+                <li>Click the play button!</li>
+                <li>Destroy every virus with D F J k key!</li>
+                <li>Get the High score!</li>
+                <li>Now lets' play!</li>
+            </ol>
+            <input type="text" required class="name">
+            <button class="play" onclick="play()" >PLAY !</button>
+        </div>
+    </dialog>
+    <dialog>
+        <p>pause</p>
+        <button>Continue</button>
+        <button>Restart</button>
+    </dialog>
+    <dialog>
+        <p>Game Over!</p>
+        
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>

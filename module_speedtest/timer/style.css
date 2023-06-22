@@ -1,0 +1,111 @@
+body{
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.numbers {
+    position: relative;
+    width: 85px;
+    height: 185px;
+    margin: 10px 20px;
+}
+
+.numbers .number {
+    background-color: red;
+    position: absolute;
+    border-radius: 50px;
+
+}
+
+.t , .c , .b {
+    width: 75px;
+    height: 8px;
+}
+
+.tl , .tr , .br , .bl {
+    width: 8px;
+    height: 75px;
+}
+
+.numbers .t {
+    top: 0;
+}
+
+.numbers .c {
+    top: 48%;
+}
+
+.numbers .b {
+    bottom: 0;
+}
+
+.numbers .tr {
+    top: 6%;
+    right: -2px;
+}
+
+.numbers .tl {
+    top: 6%;
+    left: -12px;
+}
+
+
+.numbers .bl {
+    top: 54%;
+    left: -12px;
+}
+
+.numbers .br {
+    top: 54%;
+    right: -2px;
+}
+
+.container .dots{
+    display: grid;
+    width: 50px;
+    height: 120px;
+    place-items: center;
+}
+
+.dots .dot{
+    background: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+
+}
+
+.buttons {
+    margin: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.buttons button{
+    width: max-content;
+    color: white;
+    border: none;
+    padding: 6px 7px;
+    border-radius: 3px;
+}
+
+.buttons .start {
+    background-color: rgb(5, 152, 250);
+}
+
+.buttons .stop {
+    background-color: #f70c0c;
+}
+
+.buttons .reset {
+    background-color: #fdcf03;
+}
+
+.buttons button:active {
+    color: black;
+}
