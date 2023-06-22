@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+body{
+    height: 97vh;
+    display: grid;
+    place-items: start center;
+}
+
+table{
+    place-items: normal stretch;
+}
+
+.container{
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-top: 8px solid red;
+}
+
+th {
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+td {
+    padding: 15px 0;
+    outline: 1px solid #a3a3a3;
+}
+
+tr {
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .month{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header .next{
+    transform: scaleX(-1);
+}
+
+/* INGAT REFRESS */
